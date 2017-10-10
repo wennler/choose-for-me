@@ -1,0 +1,54 @@
+body {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  background-color: rgb(165,213,165);
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-style: oblique;
+  margin-bottom: 0px;
+}
+
+.inputsection {
+  margin: 40px 0px 30px 0px;
+  width: 400px;
+}
+
+.inputs {
+  width: inherit;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.addoption {
+  margin-top: 10px;
+}
+
+.gobutton {
+margin-bottom: 20px;
+    display:block;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #464646;
+    box-shadow: 0 0 3px grey;
+    font-size:20px;
+    font-weight:bold;
+}
+.gobutton:hover {
+    background: #262626;
+}
