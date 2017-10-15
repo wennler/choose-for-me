@@ -7,13 +7,26 @@
   </head>
   <body>
     <h1>Choose for me!</h1>
-    <img typeof="foaf:Image" class="image-style-none" src="https://www.sciencenewsforstudents.org/sites/default/files/2016/06/main/articles/860-header-dog-breeds.jpg" width="800" height="400" alt="dog breeds" title="dog breeds">
+    <img typeof="foaf:Image" class="image-style-none"src="https://www.sciencenewsforstudents.org/sites/default/files/2016/06/main/articles/860-header-dog-breeds.jpg" width="800" height="400" alt="dog breeds" title="dog breeds">
     <div class="inputsection">
       <div class="inputs">
         <input placeholder="Alternative"></input>
       </div>
       <button class="addoption">Add</button>
     </div>
-    <button class="gobutton">Go!</button>
+    <div class="resultsection"></div>
+    <button class="gobutton">Go</button>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function(){
+        $('.resultsection').hide()
+        var add_option = function(){
+          $('.inputs').append('<input></input>')
+        }
+
+          $('.addoption').click(add_option)
+
+      })
+    </script>
   </body>
 </html>
